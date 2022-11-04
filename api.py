@@ -16,7 +16,7 @@ class Coins:
         }
         headers = {
           'Accepts': 'application/json',
-          'X-CMC_PRO_API_KEY': os.enviroment['key'],
+          'X-CMC_PRO_API_KEY': os.enviroment['apikey'],
         }
 
         session = Session()
@@ -36,7 +36,7 @@ class Coins:
         }
         headers = {
           'Accepts': 'application/json',
-          'X-CMC_PRO_API_KEY': os.enviroment['key'],
+          'X-CMC_PRO_API_KEY': os.enviroment['apikey'],
         }
 
         session = Session()
