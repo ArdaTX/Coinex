@@ -1,7 +1,7 @@
 from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import json
-import apikey
+import os
 
 
 
@@ -17,7 +17,7 @@ class Coins:
         }
         headers = {
           'Accepts': 'application/json',
-          'X-CMC_PRO_API_KEY': apikey.key,
+          'X-CMC_PRO_API_KEY': os.environ.get('apikey'),
         }
 
         session = Session()
@@ -37,7 +37,7 @@ class Coins:
         }
         headers = {
           'Accepts': 'application/json',
-          'X-CMC_PRO_API_KEY': apikey.key,
+          'X-CMC_PRO_API_KEY': os.environ.get('apikey'),
         }
 
         session = Session()
