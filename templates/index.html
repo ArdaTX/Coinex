@@ -27,7 +27,7 @@
                   <div class="card mask-custom">
                     <div class="card-body">
                       <div class="table-responsive">
-                        <table class="table table-borderless text-white mb-0">
+                        <table class="table table-borderless text-black mb-0">
                     <thead>
            <tr>
             <th scope="col">Rank</th>
@@ -41,11 +41,11 @@
 
            {% for row in dumps %}
            <tr>
-             <td>{{row.cmc_rank}}</td>
-             <td>{{row.symbol}}</td>
-             <td>{{row.slug}}</td>
-             <td>{{row.quote.USD.price}}</td>
-             <td>{{row.quote.USD.percent_change_24h}}</td>
+            <th scope="row">{{row.cmc_rank}}</td>
+            <th scope="row">{{row.symbol}}</td>
+            <th scope="row">{{row.slug}}</td>
+            <th scope="row">{{row.quote.USD.price}}</td>
+            <th scope="row">{{row.quote.USD.percent_change_24h}}</td>
            </tr>
            {% endfor %}
 
