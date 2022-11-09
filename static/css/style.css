@@ -4,17 +4,6 @@ body,
   height: 100%;
 }
 
-.gradient-custom-2 {
-  /* fallback for old browsers */
-  background: #6a11cb;
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to top, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to top, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
-}
-
 table td,
 table th {
   text-overflow: ellipsis;
@@ -22,12 +11,11 @@ table th {
   overflow: hidden;
 }
 
-thead th,
-tbody th {
-  color: #fff;
-}
-
-tbody td {
-  font-weight: 500;
-  color: rgba(255,255,255,.65);
+.mask-custom {
+  background: rgba(24, 24, 16, .2);
+  border-radius: 2em;
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
